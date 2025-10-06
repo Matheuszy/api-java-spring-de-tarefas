@@ -34,15 +34,19 @@ src/
 
 ### 🔹 Listar Tarefas
 GET http://localhost:8080/lista-tarefas
+POST http://localhost:8080/tarefas
+DELETE http://localhost:8080/deleta-tarefas
 
-
-**Resposta:**
+**Respostas:**
 ```json
+
+GET
+
 [
   "Tarefa{nome='Estudar Spring', descricao='Praticar API', dataInicio=2025-10-06, dataTermino=2025-10-07}"
 ]
 
-POST http://localhost:8080/tarefas
+POST 
 
 {
   "nome": "Estudar Java",
@@ -52,7 +56,7 @@ POST http://localhost:8080/tarefas
 }
 
 
-DELETE http://localhost:8080/deleta-tarefas
+DELETE 
 
 {
   "nome": "Estudar Java"
